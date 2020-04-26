@@ -6,46 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:textColor="#000000"
-        android:text="Masukkan ID atau Email :" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="40dp"
-        android:textSize="15dp"
-        android:hint="Masukkan ID atau Email"/>
+    <ImageButton
+        android:id="@+id/images"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:elevation="4dp"
+        android:background="@drawable/background"
+        android:src="@drawable/and"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="80dp"
-        android:textColor="#000000"
-        android:text="Masukkan Password : " />
+        android:text="Form login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/images"
+        android:layout_alignParentRight="true"/>
+
+
     <EditText
-        android:layout_width="match_parent"
+        android:id="@+id/edit"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="45dp"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
         android:textSize="15dp"
-        android:inputType="textPassword"
-        android:hint="Masukkan Password"/>
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textview"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit"/>
 
     <Button
         android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Sign In"
+        android:background="@color/colorPrimary"
+        android:textColorHint="#fff"
+        android:textStyle="bold"
+        android:layout_below="@id/edit2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:textColor="#fcba03"
-        android:background="#686694"
-        android:gravity="center"
-        android:text="Login" />
+        android:textAlignment="center"
+        android:text="You need account ? Sign up."
+        android:layout_below="@id/button"
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"/>
+
 </RelativeLayout>
